@@ -1,0 +1,105 @@
+.football {
+	background: #7dcb7d;
+	height: 300px;
+	width: 2000px;
+}
+
+.player-block {
+	display: inline-block;
+	position: relative;
+	animation: playermove 8s 1 linear  ;
+	width: 200px;
+	height: 200px;
+
+}
+
+.player {
+	position: absolute;
+	width: 200px;
+}
+
+@keyframes playermove {
+	0% {left: 0px;}
+	20% {left: 60px;}
+	40% {left: 100px;}
+	60% {left: 100px; }
+	80% {left: 100px;}
+	100% {left: 100px;}
+}
+
+
+
+
+
+
+
+.ball-block {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	animation: ballmove 5s 1 linear 3s;
+	display: inline-block;
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.ball {
+	position: absolute;
+	width: 50px;
+	
+	
+}
+
+
+@keyframes ballmove {
+	0% {left: 100px; transform: rotate(360deg);}
+	20% {left: 300px; transform: rotate(0deg);}
+	40% {left: 500px; transform: rotate(360deg);}
+	60% {left: 700px; transform: rotate(0deg);}
+	80% {left: 800px; transform: rotate(360deg);}
+	100% {left: 900px; transform: rotate(0deg);}
+
+
+
+} 
+
+.goal-block {
+	display: inline-block;
+	margin-left: 550px;
+	
+}
+
+.goal {
+	width: 500px;
+}
+
+.fans-block {
+	background: lightyellow;
+	width: 2000px;
+}
+
+
+.goalkeeper-block {
+	display: inline-block;
+	width: 500px;
+	margin-bottom: 160px;
+	margin-left: -402px;
+	position: relative;
+}
+.goalkeeper {
+	width: 150px;
+	position: absolute;
+	animation: goalkeepermove 5s 1 linear 3s;
+
+}
+
+@keyframes goalkeepermove {
+	0% {left: 50px;}
+	20% {left: 10px;}
+	40% {left: 150px;}
+	60% {left: 50px;}
+	80% {left: 100px;}
+	100% {left: 50px;}
+
+}
+
